@@ -86,7 +86,7 @@
         }
 
         try {
-            const response = await fetch(`/api/buscar-endereco/${cep}`);
+            const response = await fetch(`/buscar-endereco/${cep}`);
             if (!response.ok) throw new Error();
 
             const data = await response.json();
